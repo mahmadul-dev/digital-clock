@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  background: #204a5c;
+  background: linear-gradient(90deg, rgba(32, 74, 92, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+}
+
+.clock {
+  background: #833AB4;
+  background: radial-gradient(circle, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 0%, rgba(252, 176, 69, 1) 50%);
+  padding: 20px;
+  width: 80%;
+  max-width: 90vw;
+  max-height: 100vh;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  border-radius: 10px;
+  font-weight: 500;
+  box-shadow: 3px 4px 20px 0px #ffffff;
+}
+
+.clock span {
+  font-size: 70px;
+  position: relative;
+  text-align: center;
+  /* width: 200px; */
+  display: inline-block;
+}
+
+#hrs::after {
+  content: "HOURS";
+  font-size: 12px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  /* margin: 20 auto; */
+
+}
+
+#min::after {
+  content: "MIN";
+  font-size: 12px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  /* margin: 20 auto; */
+
+}
+
+#sec::after {
+  content: "SEC";
+  font-size: 12px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  /* margin: 20 auto; */
+
+}
